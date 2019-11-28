@@ -6,7 +6,7 @@ html {
 *::after {
     box-sizing: inherit;
 }
-.all {
+.container {
     font-family: 'Playfair Display', serif; 
     width: 900px;
     margin: 0 auto;
@@ -24,6 +24,7 @@ list-style: none;
 font-weight: 400; 
 }
 .navigation a {
+    display: block;
     color: #626262;
     text-transform: uppercase;
     text-decoration: none;
@@ -47,14 +48,15 @@ font-weight: 400;
     padding: 0;
     color: #626262;
     font-weight: 400;
-    list-style: none;
+    list-style: none; 
+    padding-bottom: 56px;
 }
 .item {  
     line-height: 24px;
     font-size: 14px;
     display: inline-block;
     width: 420px;
-    margin-right: 50px;
+    margin-right: 60px;
     margin-bottom: 140px;
 }
 
@@ -71,15 +73,11 @@ font-weight: 400;
 button { 
     width: 160px;
     height: 60px;
-    margin-top: 56px;
-    padding: 0;
     background-color: #fff;
     border: 1px solid  #000;
-    margin-left: 360px;
-
-}
-button a {
-    font-family: 'Playfair Display', serif; 
+    display: block;
+    padding: 0;
+    margin: 0 auto;
     font-size: 20px;
     color: #626262;
     text-decoration: none;
