@@ -13,7 +13,10 @@ body {
   width: 1110px;
   padding-bottom: 100px;
 }
-
+p, h2,h3 {
+  margin: 0;
+  padding: 0;
+}
 /* nav */
 .navi {
   height: 130px;
@@ -24,7 +27,6 @@ body {
   line-height: 32px;
   text-transform: uppercase;
   color: #555252;
-  width: 110px;
   margin: 0;
   float: left;
 }
@@ -48,11 +50,11 @@ body {
 
 .navi-menu li {
   float: left;
-  padding-right: 32px;
+  margin-right: 32px;
 }
 
 .navi-menu li:last-child {
-  padding: 0;
+  margin: 0;
 }
 
 .logo :hover,
@@ -69,7 +71,12 @@ body {
 }
 
 /* content */
+
 /* first block */
+
+.fblock {
+  margin-bottom: 130px;
+}
 
 .logo-fblock {
   text-transform: uppercase;
@@ -78,27 +85,22 @@ body {
   text-align: center;
   color: #515151;
   margin: 0;
-  margin-bottom: 36px;
 }
 
-p {
-  padding: 0;
-  margin: 0;
-}
-
-.underline1 {
+.logo-fblock::after {
+  content: "";
   display: block;
   background-color: #1abc9c;
   margin: 0 auto;
   width: 160px;
   height: 8px;
+  margin-top: 36px;
   margin-bottom: 92px;
 }
 
 .items {
   padding: 0;
   margin: 0;
-  margin-bottom: 100px;
 }
 
 .item {
@@ -110,7 +112,9 @@ p {
   margin-right: 30px;
   margin-bottom: 30px;
 }
-
+.items li:nth-last-child(-n+4) {
+  margin-bottom: 0;
+}
 .items li:nth-child(4n) {
   margin-right: 0;
 }
@@ -137,12 +141,11 @@ p {
   height: 40px;
   padding-left: 12px;
 }
-
-a.name:hover {
+.item:hover .name {
   background-color: #1abc9c;
 }
 
-a.price:hover {
+.item:hover .price {
   background-color: #7fd9c7;
 }
 
@@ -153,24 +156,30 @@ a.price:hover {
 }
 
 /* second block */
+
 .logo-sblock {
   text-transform: uppercase;
   font-size: 48px;
   line-height: 32px;
   text-align: center;
   color: #515151;
-  margin: 0;
-  margin-bottom: 36px;
+  margin: 0; 
+  margin-bottom: 116px;
 }
 
-.underline2 {
+.logo-sblock::after {
+  content: "";
   display: block;
   background-color: #1abc9c;
   margin: 0 auto;
   width: 160px;
   height: 8px;
-  margin-bottom: 80px;
+  margin-top: 36px;
 }
+
+.kard {
+margin-bottom: 15px;
+ }
 
 .pages {
   margin: 0;
@@ -183,7 +192,6 @@ a.price:hover {
 
 .page {
   width: 350px;
-  height: 550px;
   float: left;
   margin-right: 30px;
   color: #555252;
@@ -198,18 +206,33 @@ a.price:hover {
   font-size: 18px;
 }
 
-.underline3 {
+.little-logo::after {
+  content: "";
   display: block;
   background-color: #1abc9c;
   margin: 0;
   width: 160px;
   height: 4px;
+  margin-top: 16px;
 }
 
 .text2 {
   padding-top: 30px;
   font-size: 14px;
-  padding-bottom: 20px;
+  padding-bottom: 18px;
+}
+
+.btn {
+  width: 160px;
+  height: 50px;
+  border: none;
+  background-color: transparent;
+  color: #1abc9c;
+}
+
+.btn:hover {
+  color: #fff;
+  background-color: #1abc9c;
 }
 
 .pages::after {
@@ -218,11 +241,3 @@ a.price:hover {
   clear: both;
 }
 
-.btn {
-  color: #fff;
-  width: 160px;
-  height: 50px;
-  text-decoration: none;
-  background-color: #1abc9c;
-  border: none;
-}
