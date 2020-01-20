@@ -35,6 +35,7 @@
  .navi a {
    text-decoration: none;
    color: black;
+   display: block;
  }
 
  .navi-menu li {
@@ -180,6 +181,7 @@
 
  .name,
  .price {
+   margin: 0;
    color: #fff;
    text-transform: uppercase;
    display: inline-block;
@@ -318,6 +320,7 @@
  }
 
  .llink a {
+   display: block;
    text-decoration: none;
    color: #c8c8c8;
  }
