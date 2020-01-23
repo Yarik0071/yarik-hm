@@ -1,0 +1,207 @@
+:root {
+  --first-color: #989898;
+  --secondory-color: #95e1d3;
+  --yallow-color: #fed136;
+}
+
+@font-face {
+  font-family: "Arvo-italic-font";
+  src: url("../fonts/arvo-v13-latin-italic.woff2") format("woff2");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Montserrat-font";
+  src: url("../fonts/montserrat-v14-latin-700.woff") format("woff");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Montserrat-font";
+  src: url("../fonts/montserrat-v14-latin-regular.woff") format("woff");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "RobotoSlab-font";
+  src: url("../fonts/roboto-slab-v10-latin-regular.woff2") format("woff2");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Wisdom-font";
+  src: url("../fonts/Wisdom-Script.woff") format("woff");
+  font-weight: 400;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat-font", sans-serif;
+  margin-bottom: 100px;
+}
+
+.cont {
+  width: 940px;
+  margin: 0 auto;
+}
+
+/* nav */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 80px;
+}
+
+.logo {
+  margin: 0;
+  font-family: "Wisdom-font";
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 88px;
+}
+
+.nav {
+  line-height: 110px;
+  width: 480px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  text-transform: uppercase;
+}
+
+.logo:hover,
+.nav-item:hover {
+  color: var(--yallow-color);
+}
+
+/* Title */
+
+.title {
+  margin: 0;
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;
+}
+
+.ltltext {
+  margin: 0;
+  font-family: "Arvo-italic-font";
+  line-height: 40px;
+  text-align: center;
+  margin-bottom: 80px;
+  color: #777777;
+}
+
+/* fsection */
+
+.fsec {
+  margin-bottom: 120px;
+}
+
+.items {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.item {
+  width: 274px;
+  text-align: center;
+}
+
+.image {
+  margin-bottom: 28px;
+}
+
+.item-text,
+.item-logo {
+  margin: 0;
+  padding: 0;
+}
+
+.item-logo {
+  margin-bottom: 18px;
+}
+
+/* ssec */
+
+.baner {
+  display: block;
+  background-color: #222;
+  background-image: url("../img/Map_Image.png");
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  padding: 90px 0 120px;
+}
+
+.title2 {
+  padding-top: 110px;
+  color: #fff;
+}
+
+.pages {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.inputs {
+  max-width: 455px;
+}
+
+.input {
+  padding: 20px 0 20px 20px;
+  min-width: 455px;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+
+.text-message {
+  min-width: 455px;
+  border-radius: 5px;
+  padding: 20px 0 20px 20px;
+  margin-bottom: 30px;
+}
+
+.massage {
+  font-family: 'Montserrat-b';
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 66px;
+  min-width: 240px;
+  color: #fff;
+  text-transform: uppercase;
+  margin: 0 auto;
+  border-radius: 3px;
+  background-color: var(--yallow-color);
+  border-style: none;
+  cursor: pointer;
+}
+
+input[name="name"]:focus:valid,
+input[name="email"]:focus:valid,
+textarea:focus:valid {
+    outline: none;
+    box-shadow: 0px 0px 2px 2px limegreen inset;
+}
+
+input:focus:invalid,
+textarea:focus:invalid {
+    outline: none;
+    box-shadow: 0px 0px 2px 2px red inset;
+}
+
+input[name="subject"] {
+    outline: none;
+}
