@@ -64,6 +64,8 @@ body {
   font-weight: 400;
   font-size: 26px;
   line-height: 88px;
+  text-decoration: none;
+  color: black;
 }
 
 .nav {
@@ -75,6 +77,11 @@ body {
   list-style: none;
   justify-content: space-between;
   text-transform: uppercase;
+}
+
+.nav-item {
+  text-decoration: none;
+  color: black;
 }
 
 .logo:hover,
@@ -119,8 +126,23 @@ body {
   text-align: center;
 }
 
-.image {
+.img {
+  height: 74px;
   margin-bottom: 28px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.p1 {
+  background-image: url(../img/img1.png);
+}
+
+.p2 {
+  background-image: url(../img/img2.png);
+}
+
+.p3 {
+  background-image: url(../img/img3.png);
 }
 
 .item-text,
