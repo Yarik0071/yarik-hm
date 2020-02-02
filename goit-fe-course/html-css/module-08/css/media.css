@@ -1,0 +1,63 @@
+@media (min-width: 321px) {
+  
+  .cont {
+    min-width: 490px;
+  }
+  
+  .baner {
+    padding-bottom: 234px;
+  }
+
+  .nav {
+    min-width: 660px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin-bottom: 160px;
+  }
+
+  .btns {
+    margin: 0;
+  }
+
+  .title {
+    font-size: 52px;
+  }
+
+  .text {
+    font-size: 24px;
+  }
+
+  .list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .list__item {
+    max-width: 236px;
+  }
+}
+
+@media (min-width: 769px) {
+
+  .cont {
+    min-width: 940px;
+  }
+
+  .baner {
+    padding-top: 33px;
+  }
+
+  .list__item {
+    max-width: 220px;
+  }
+
+  .list__item {
+    margin: 0;
+  }
+
+  .list {
+    margin-bottom: 30px;
+  }
+}
