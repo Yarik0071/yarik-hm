@@ -9,7 +9,7 @@
 }
 
 .cont {
-  width: 280px;
+  width: 320px;
   margin: 0 auto;
 }
 
@@ -111,7 +111,7 @@ h2 {
 
 .main__section {
   text-align: center;
-  margin-bottom: 58px;
+  padding-bottom: 58px;
 }
 
 .flogo {
@@ -122,9 +122,13 @@ h2 {
 .list {
   padding: 0;
   list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .list__item {
+  width: 236px;
   margin-bottom: 30px;
 }
 
@@ -134,5 +138,39 @@ h2 {
 }
 
 .list__text {
+  font-weight: 300;
+  font-family: 'Roboto', sans-serif;
   margin: 0;
 }
+
+.img-1::after {
+  background-image: url("../img/img1.png");
+  background-repeat: no-repeat;
+}
+.img-2::after {
+  background-image: url("../img/img2.png");
+  background-repeat: no-repeat;
+}
+.img-3::after {
+  background-image: url("../img/img3.png");
+  background-repeat: no-repeat;
+}
+.img-4::after {
+  background-image: url("../img/img4.png");
+  background-repeat: no-repeat;
+}
+
+.img {
+  position: relative;
+}
+
+.img::after {
+  content: "";
+  display: table;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  right: 46px;
+  top: 90px;
+}
+

@@ -1,7 +1,7 @@
 @media (min-width: 321px) {
   
   .cont {
-    min-width: 490px;
+    min-width: 749px;
   }
   
   .baner {
@@ -29,6 +29,7 @@
   }
 
   .list {
+    min-width: 492px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
