@@ -1,0 +1,385 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat-font", sans-serif;
+}
+
+.cont {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ________________________ */
+
+.baner {
+  min-height: 1000px;
+  background-image: url("../img/bgi.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.header {
+  margin-bottom: 46px;
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-height: 126px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 122px;
+}
+
+.nav__logo {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.nav__menu {
+  text-transform: uppercase;
+  min-width: 700px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav__menu-item {
+  position: relative;
+}
+
+.nav__menu-link {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+}
+
+.menu__link svg {
+  display: block;
+  width: 20px;
+  height: 20px;
+  fill: #fff;
+}
+
+.underline {
+  width: 100%;
+  height: 3px;
+  position: absolute;
+  top: 22px;
+  background-color: transparent;
+}
+
+.nav__menu-item:hover .underline {
+  background-color: #fce38a;
+}
+
+.nav__menu-item:hover .nav__menu-link {
+  color: #fce38a;
+}
+
+/* __________________ */
+
+.title {
+  text-align: center;
+}
+
+.title__logo {
+  margin: 0;
+  color: #fff;
+  font-size: 150px;
+  font-weight: 700;
+  line-height: 140px;
+  margin-bottom: 126px;
+}
+
+.title__text {
+  font-family: 'Kaushan Script', cursive;
+  font-size: 72px;
+  font-weight: 400;
+}
+
+.btn {
+  cursor: pointer;
+  background-color: transparent;
+  padding: 15px 32px;
+  color: #fff;
+  border: 3px solid #ffffff;
+}
+
+/* ________________________ */
+
+.services {
+  margin-bottom: 90px;
+}
+
+.logo {
+  text-align: center;
+  margin: 0;
+  text-transform: uppercase;
+  margin-bottom: 46px;
+  font-size: 30px;
+  line-height: 40px;
+}
+
+.logo__text {
+  font-family: "Kaushan Script";
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.services__logo::after {
+  content: "";
+  display: block;
+  background-color: #f38181;
+  width: 60px;
+  height: 3px;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.list__item {
+  max-width: 26%;
+  padding-left: 30px;
+  position: relative;
+}
+
+.list__item::before {
+  content: "";
+  display: inline-block;
+  height: 32px;
+  width: 32px;
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: contain;
+  position: absolute;
+  top: 0;
+  left: -25px;
+}
+
+.list__item-img1::before {
+  background-image: url("../img/img1.png");
+}
+
+.list__item-img2::before {
+  background-image: url("../img/img2.png");
+}
+
+.list__item-img3::before {
+  background-image: url("../img/img3.png");
+}
+
+.list__item-img4::before {
+  background-image: url("../img/img4.png");
+}
+
+.list__item-img5::before {
+  background-image: url("../img/img5.png");
+}
+
+.list__item-img6::before {
+  background-image: url("../img/img6.png");
+}
+
+.list__logo,
+.list__text {
+  margin: 0 0 20px 0;
+}
+
+/* _______________________ */
+
+.team {
+  margin-bottom: 80px;
+}
+
+.team__text {
+  text-align: center;
+  margin: 0 0 96px 0;
+}
+
+.team__pages {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.team__page {
+  position: relative;
+  text-align: center;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  width: 380px;
+  height: 470px;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(252, 227, 138, 0.90)), to(rgba(243, 129, 129, 0.90)));
+  background-image: -o-linear-gradient(bottom, rgba(252, 227, 138, 0.90), rgba(243, 129, 129, 0.90));
+  background-image: linear-gradient(to top, rgba(252, 227, 138, 0.90), rgba(243, 129, 129, 0.90));
+  -webkit-box-shadow: 10px 10px #95e1d3;
+          box-shadow: 10px 10px #95e1d3;
+}
+
+.overlay__icons {
+  height: 470px;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.overlay__socials {
+  display: block;
+  text-decoration: none;
+  width: 56px;
+  height: 56px;
+  background-color: #fce38a;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.team__page:hover .overlay {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: 200ms linear;
+  -o-transition: 200ms linear;
+  transition: 200ms linear;
+}
+
+.overlay__socials a {
+  display: block;
+  height: 100%;
+}
+
+.overlay__socials:hover {
+  background-color: #f38181;
+  -webkit-transition: 200ms linear;
+  -o-transition: 200ms linear;
+  transition: 200ms linear;
+}
+
+.team__name {
+  margin: 30px 0 15px 0;
+}
+
+.team__status {
+  margin: 0;
+}
+
+.overlay__socials svg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 20px;
+  height: 20px;
+  fill: #f38181;
+}
+
+.overlay__socials:hover svg {
+  fill: #fff;
+}
+
+/* ______________________ */
+
+.footer {
+  border-top: 1px solid #e7e7e7;
+  list-style: none;
+  font-size: 0;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 24px 0;
+}
+
+.footer__item {
+  line-height: 46px;
+  margin: 0;
+  font-size: 14px;
+  color: #333333;
+}
+
+.submit {
+  border: 1px solid #e5e5e5;
+  padding: 14px;
+  font-size: 15px;
+}
+
+.subscribe {
+  cursor: pointer;
+  font-size: 15px;
+  width: 150px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  padding: 15px;
+  background-color: #95e1d3;
+}
+
+.qiq:hover {
+  color: #f38181;
+}
