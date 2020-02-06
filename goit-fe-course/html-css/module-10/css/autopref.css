@@ -321,19 +321,13 @@ body {
 }
 
 .overlay__socials svg {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 30px;
-  height: 30px;
-  fill: #f38181;
-}
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    fill: #f38181;
+  }
 
 .overlay__socials:hover svg {
   fill: #fff;
