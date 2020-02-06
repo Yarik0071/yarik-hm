@@ -1,7 +1,7 @@
 @media (min-width: 321px) {
   
   .cont {
-    min-width: 749px;
+    min-width: 748px;
   }
   
   .baner {
@@ -29,9 +29,8 @@
   }
 
   .list {
-    min-width: 492px;
-    display: flex;
-    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 492px;
     justify-content: space-between;
   }
 
@@ -43,22 +42,27 @@
 @media (min-width: 769px) {
 
   .cont {
-    min-width: 940px;
+    max-width: 492px;
   }
 
   .baner {
     padding-top: 33px;
   }
-
-  .list__item {
-    max-width: 220px;
+  
+  .list {
+    min-width: 940px;
+    margin-bottom: 30px;
   }
 
   .list__item {
+    max-width: 220px; 
     margin: 0;
   }
 
-  .list {
-    margin-bottom: 30px;
+}
+
+@media (min-width: 960px) {
+  .cont {
+    min-width: 940px;
   }
 }

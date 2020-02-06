@@ -4,7 +4,7 @@
   box-sizing: inherit;
 }
 
-.body {
+body {
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -115,7 +115,6 @@ h2 {
 }
 
 .flogo {
-  vertical-align: middle;
   margin-bottom: 15px;
 }
 
