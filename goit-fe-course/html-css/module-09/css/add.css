@@ -1,0 +1,158 @@
+:root {
+  --main-color: #adadad;
+  --black-color: #414141;
+  --white-color: #fff;
+  --red-color: #ff4e50;
+  --main-font-family: 'Montserrat';
+  --second-font-family: 'Roboto';
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--main-font-family);
+  margin: 0;
+}
+
+.btn__font {
+  font-family: var(--main-font-family);
+}
+
+.banner {
+  display: block;
+  background-image: url("../img/bcg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-bottom: 140px;
+  margin-bottom: 70px;
+}
+
+.btns {
+  margin-bottom: 115px;
+}
+
+.logo {
+  line-height: 52px;
+  font-size: 30px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  text-align: center;
+}
+
+.link {
+  font-size: 20px;
+  display: block;
+}
+
+.text {
+  font-family: var(--second-font-family);
+  margin: 0;
+  margin-bottom: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  text-align: center;
+  color: #fff;
+}
+
+.btn {
+  font-weight: 700;
+  min-width: 90px;
+  line-height: 36px;
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid transparent;
+}
+
+.btn:hover {
+  border-color: #fff;
+  border-radius: 25px;
+}
+
+.red__btn {
+  display: block;
+  margin: 0 auto;
+  font-weight: 700;
+  line-height: 40px;
+  width: 264px;
+  border-style: none;
+  cursor: pointer;
+  border-radius: 25px;
+  background-color: transparent;
+  border: 2px solid #ff4e50;
+  color: #ff4e50;
+}
+
+.wbgc {
+  background-color: #ff4e50;
+  color: #fff;
+  border-color: #ff4e50;
+}
+
+/* main */
+
+.img-1::after {
+  background-image: url("../img/img1.png");
+  background-repeat: no-repeat;
+}
+
+.img-2::after {
+  background-image: url("../img/img2.png");
+  background-repeat: no-repeat;
+}
+
+.img-3::after {
+  background-image: url("../img/img3.png");
+  background-repeat: no-repeat;
+}
+
+.img-4::after {
+  background-image: url("../img/img4.png");
+  background-repeat: no-repeat;
+}
+
+.img {
+  margin: 0 auto;
+  position: relative;
+  max-width: 200px;
+  margin-bottom: 22px;
+}
+
+.img::after {
+  content: "";
+  display: table;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  right: 40px;
+  top: 90px;
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item {
+  text-align: center;
+}
+
+.contant__logo {
+  text-align: center;
+}
+
+.list__logo {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.list__text {
+  font-weight: 300;
+  font-size: 14px;
+  font-family: var(--second-font-family);
+}

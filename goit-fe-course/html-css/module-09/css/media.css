@@ -1,0 +1,8 @@
+@media (min-width: 321px) {
+    .btns {
+        margin: 0;
+    }
+    .nav {
+        margin-bottom: 115px;
+    }
+}
