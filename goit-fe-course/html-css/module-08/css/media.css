@@ -1,15 +1,6 @@
 @media (min-width: 321px) {
-  
-  .cont {
-    min-width: 748px;
-  }
-  
-  .baner {
-    padding-bottom: 234px;
-  }
 
   .nav {
-    min-width: 660px;
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
@@ -30,7 +21,7 @@
 
   .list {
     margin: 0 auto;
-    max-width: 492px;
+    max-width: 300px;
     justify-content: space-between;
   }
 
@@ -39,10 +30,10 @@
   }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
 
   .cont {
-    max-width: 492px;
+    min-width: 660px;
   }
 
   .baner {
@@ -50,19 +41,19 @@
   }
   
   .list {
-    min-width: 940px;
+    max-width: 490px;
     margin-bottom: 30px;
   }
 
   .list__item {
-    max-width: 220px; 
+    max-width: 234px; 
     margin: 0;
   }
 
 }
 
 @media (min-width: 960px) {
-  .cont {
+  .list {
     min-width: 940px;
   }
 }
