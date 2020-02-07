@@ -282,8 +282,8 @@ body {
 }
 
 .overlay__socials {
-  width: 56px;
-  height: 56px;
+  width: 44px;
+  height: 44px;
   background-color: #fce38a;
 }
 
@@ -318,6 +318,7 @@ body {
 
 .overlay__socials svg {
   display: block;
+  padding-top: 12px;
   width: 32px;
   height: 32px;
   fill: #f38181;
@@ -373,4 +374,15 @@ body {
 
 .footer__item-qiq:hover {
   color: #f38181;
+}
+
+/* MEDIA */
+
+@media (-webkit-min-device-pixel-ratio: 2), 
+(-o-min-device-pixel-ratio: 2/1), 
+(min-resolution: 192dpi), 
+(min-resolution: 2dppx) { 
+  .baner {
+    background:url(../img/bgi@2x.png);  
+  }
 }
