@@ -2,7 +2,7 @@
 *::before,
 *::after {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -17,7 +17,6 @@ body {
 /* ________________________ */
 
 .baner {
-  min-height: 1000px;
   background-image: url("../img/bgi.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -25,6 +24,7 @@ body {
 }
 
 .header {
+  padding-bottom: 128px;
   margin-bottom: 46px;
 }
 
@@ -33,12 +33,12 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   min-height: 126px;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   margin-bottom: 122px;
 }
 
@@ -60,11 +60,11 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .nav__menu-item {
@@ -168,10 +168,10 @@ body {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .list__item {
@@ -241,8 +241,8 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .team__page {
@@ -262,7 +262,7 @@ body {
   background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(252, 227, 138, 0.90)), to(rgba(243, 129, 129, 0.90)));
   background-image: linear-gradient(to top, rgba(252, 227, 138, 0.90), rgba(243, 129, 129, 0.90));
   -webkit-box-shadow: 10px 10px #95e1d3;
-          box-shadow: 10px 10px #95e1d3;
+  box-shadow: 10px 10px #95e1d3;
 }
 
 .overlay__icons {
@@ -274,11 +274,11 @@ body {
   display: flex;
   list-style: none;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .overlay__socials {
@@ -298,6 +298,7 @@ body {
 .overlay__socials a {
   display: block;
   height: 100%;
+
 }
 
 .overlay__socials:hover {
@@ -316,19 +317,14 @@ body {
 }
 
 .overlay__socials svg {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    width: 30px;
-    height: 30px;
-    fill: #f38181;
-  }
+  display: block;
+  width: 32px;
+  height: 32px;
+  fill: #f38181;
+  margin: 0 auto;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
 .overlay__socials:hover svg {
   fill: #fff;
@@ -346,8 +342,8 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   padding: 24px 0;
 }
 
@@ -358,13 +354,13 @@ body {
   color: #333333;
 }
 
-.submit {
+.footer__form-submit {
   border: 1px solid #e5e5e5;
   padding: 14px;
   font-size: 15px;
 }
 
-.subscribe {
+.footer__form-subscribe {
   cursor: pointer;
   font-size: 15px;
   width: 150px;
@@ -375,6 +371,6 @@ body {
   background-color: #95e1d3;
 }
 
-.qiq:hover {
+.footer__item-qiq:hover {
   color: #f38181;
 }
