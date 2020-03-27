@@ -3,7 +3,7 @@ const findBestEmployee = function (employees) {
   let name
   const keys = Object.keys(employees)
 
-  for (key of keys){
+  for (let key of keys){
       if (uppersum < employees[key]) {
       uppersum = employees[key]
       name = key;
