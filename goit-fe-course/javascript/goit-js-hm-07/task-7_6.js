@@ -7,7 +7,7 @@ input.addEventListener("blur", (e) => {
     input.classList.add("valid")
   } else {
     input.classList.remove("valid")
-  } 
+  }
   if (text.length !== number) {
     input.classList.add("invalid")
   } else {

@@ -13,6 +13,7 @@ function increment() {
   counterValue += 1
   span.textContent = counterValue
 }
+
 function decrement() {
   counterValue -= 1
   span.textContent = counterValue

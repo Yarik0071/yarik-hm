@@ -3,6 +3,6 @@ const text = document.querySelector("#text")
 
 range.addEventListener("input", changeSize)
 
-function changeSize(){
-text.style.fontSize = `${range.value}px`;
+function changeSize() {
+    text.style.fontSize = `${range.value}px`;
 }
